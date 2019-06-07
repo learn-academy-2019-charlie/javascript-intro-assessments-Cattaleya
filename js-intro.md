@@ -13,3 +13,5 @@ Answer these questions, then follow the instructions to submit your first assess
 #### 5. Explain the differences between console.log() and return. Why would you use one over the other?
 
 #### 6. What is one thing we did in class this week that helped you learn the most?  
+
+random message 
