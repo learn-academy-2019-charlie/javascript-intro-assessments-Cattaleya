@@ -2,61 +2,117 @@
 
 // Consider this variable:
 
-var mantra = "Be the dev";
+// var mantra = "Be the dev";
 
 // 1. Write the code that returns 'B' from mantra.
+// console.log(mantra.charAt('B'))
 
 // 2. Write the code that determines if there is a 'x' in mantra.
+// function letter(str){
+//  if (str.includes('x')){
+//  return "has x"
+//  }else{ 
+//  return 'no x'
+//  }
+// }
+// console.log(letter(mantra))
 
 // 3. Write the code that determines if there is a 'v' in mantra.
 
+// function letter(str){
+//  if (str.includes('v')){
+//  return "has v"
+//  }else{ 
+//  return 'no v'
+//  }
+// }
+// console.log(letter(mantra))
+
 // Stretch: Write the code that returns the position of 'v' in mantra.
+// var mantra = "Be the dev";
 
+// function position (str){
+//     let newArr = str.indexOf("v")
+//     return newArr 
+// }
+// console.log(position(mantra))
 
-// Consider the following statement:
+// //Consider the following statement:
 
-var codingIsEasy
-var imBored
+// var codingIsEasy
+// var imBored
 
-if (codingIsEasy && imBored) {
-    console.log("I need more!")
-} else {
-    console.log("Steady as she goes")
-}
-
+// function work (value){
+// if (codingIsEasy, imBored) {
+//     return 'I need more!'
+// } else {
+//     return 'Steady as she goes'
+// }    
+// }
+// console.log(work(codingIsEasy, imBored))
 // 4. Update the codingIsEasy and imBored variables above the statement to the values required to log "I need more!"
 
 // Consider the following statement:
 
-var imLost
-var imFrustrated
+// var imLost
+// var imFrustrated
 
-if (imLost || imFrustrated) {
-    console.log('Break time!')
-} else {
-    console.log('Keep coding!')
-}
+// function stress(){
+// if (imLost || imFrustrated) {
+//     return 'Break time!'
+// } else {
+//     return 'Keep coding!'
+    
+// }
+// }
+//  console.log (stress(imLost|| imFrustrated))
 
-// 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
+// // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
 
-// 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
+// // 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
 
-// Stretch: Using a while loop.
+// var mantra = "Be the dev"
 
-// Super Stretch: Using forEach().
+ 
+//      var newArr = mantra.split("")
+//     for (let i=0; i < newArr.length ; i++){
+//         console.log (newArr[i])
+//     }
 
-// Consider the following variable:
+// // Stretch: Using a while loop.
 
-var message = "thisisateststring"
+// // Super Stretch: Using forEach().
 
-// 7. Write a function that takes a string like message as an argument and returns the string without vowels.
+// // Consider the following variable:
 
-// Stretch: Update your function to throw an exception if the argument is not a string.
+// var message = "thisisateststring"
 
-// Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
+// // // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
+// function noVowels (str){
+//     return str.replace (/[aeiou]/gi,"")
+// }
+// console.log (noVowels(message))
 
-// Consider the following variable:
+// // Stretch: Update your function to throw an exception if the argument is not a string.
+
+// // Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
+
+// // Consider the following variable:
 
 var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
 
-// 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
+// // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
+
+function onlyCat (arr){
+    let  newArr = []
+    for(let i =0 ; i < arr.length; i ++){
+        if (arr[i].animal ==="cat" ) 
+        newArr.push(arr[i])
+    }
+    return newArr 
+}
+console.log (onlyCat (toonimals))
+        
+
+
+
