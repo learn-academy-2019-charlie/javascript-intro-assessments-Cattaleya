@@ -2,102 +2,102 @@
 
 // Consider this variable:
 
-// var mantra = "Be the dev";
+var mantra = "Be the dev";
 
 // 1. Write the code that returns 'B' from mantra.
-// console.log(mantra.charAt('B'))
+console.log(mantra.charAt('B'))
 
 // 2. Write the code that determines if there is a 'x' in mantra.
-// function letter(str){
-//  if (str.includes('x')){
-//  return "has x"
-//  }else{ 
-//  return 'no x'
-//  }
-// }
-// console.log(letter(mantra))
+function letter(str){
+ if (str.includes('x')){
+ return "has x"
+ }else{ 
+ return 'no x'
+ }
+}
+console.log(letter(mantra))
 
 // 3. Write the code that determines if there is a 'v' in mantra.
 
-// function letter(str){
-//  if (str.includes('v')){
-//  return "has v"
-//  }else{ 
-//  return 'no v'
-//  }
-// }
-// console.log(letter(mantra))
+function letter(str){
+ if (str.includes('v')){
+ return "has v"
+ }else{ 
+ return 'no v'
+ }
+}
+console.log(letter(mantra))
 
 // Stretch: Write the code that returns the position of 'v' in mantra.
-// var mantra = "Be the dev";
+var mantra = "Be the dev";
 
-// function position (str){
-//     let newArr = str.indexOf("v")
-//     return newArr 
-// }
-// console.log(position(mantra))
+function position (str){
+    let newArr = str.indexOf("v")
+    return newArr 
+}
+console.log(position(mantra))
 
-// //Consider the following statement:
+//Consider the following statement:
 
-// var codingIsEasy
-// var imBored
+var codingIsEasy
+var imBored
 
-// function work (value){
-// if (codingIsEasy, imBored) {
-//     return 'I need more!'
-// } else {
-//     return 'Steady as she goes'
-// }    
-// }
-// console.log(work(codingIsEasy, imBored))
+function work (value){
+if (codingIsEasy, imBored) {
+    return 'I need more!'
+} else {
+    return 'Steady as she goes'
+}    
+}
+console.log(work(codingIsEasy, imBored))
 // 4. Update the codingIsEasy and imBored variables above the statement to the values required to log "I need more!"
 
 // Consider the following statement:
 
-// var imLost
-// var imFrustrated
+var imLost
+var imFrustrated
 
-// function stress(){
-// if (imLost || imFrustrated) {
-//     return 'Break time!'
-// } else {
-//     return 'Keep coding!'
+function stress(){
+if (imLost || imFrustrated) {
+    return 'Break time!'
+} else {
+    return 'Keep coding!'
     
-// }
-// }
-//  console.log (stress(imLost|| imFrustrated))
+}
+}
+ console.log (stress(imLost|| imFrustrated))
 
-// // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
+// 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
 
-// // 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
+// 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
 
-// var mantra = "Be the dev"
+var mantra = "Be the dev"
 
  
-//      var newArr = mantra.split("")
-//     for (let i=0; i < newArr.length ; i++){
-//         console.log (newArr[i])
-//     }
+     var newArr = mantra.split("")
+    for (let i=0; i < newArr.length ; i++){
+        console.log (newArr[i])
+    }
 
-// // Stretch: Using a while loop.
+// Stretch: Using a while loop.
 
-// // Super Stretch: Using forEach().
+// Super Stretch: Using forEach().
 
-// // Consider the following variable:
+// Consider the following variable:
 
-// var message = "thisisateststring"
+var message = "thisisateststring"
 
-// // // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
-// function noVowels (str){
-//     return str.replace (/[aeiou]/gi,"")
-// }
-// console.log (noVowels(message))
+// // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
+function noVowels (str){
+    return str.replace (/[aeiou]/gi,"")
+}
+console.log (noVowels(message))
 
-// // Stretch: Update your function to throw an exception if the argument is not a string.
+// Stretch: Update your function to throw an exception if the argument is not a string.
 
-// // Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
+// Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
 
-// // Consider the following variable:
+// Consider the following variable:
 
 var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
 
