@@ -21,4 +21,6 @@ ar str = "Apple, Banana, Kiwi";
 var res = str.substring(7, 13);
 
 #### 6. What is one thing we did in class this week that helped you learn the most?  
+
 I liked the partnering up to do exercises because it makes the work go more smoothly. 
+

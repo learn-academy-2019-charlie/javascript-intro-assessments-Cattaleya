@@ -1,23 +1,33 @@
-// Intro to Javascript Assessments
 
-// Consider this variable:
+Consider this variable:
 
 var mantra = "Be the dev";
 
-// 1. Write the code that returns 'B' from mantra.
-console.log(mantra.charAt('B'))
-
-// 2. Write the code that determines if there is a 'x' in mantra.
-function letter(str){
- if (str.includes('x')){
- return "has x"
- }else{ 
- return 'no x'
- }
+1. Write the code that returns 'B' from mantra.
+function sentence(letter) {
+  return "B";
 }
-console.log(letter(mantra))
+console.log(sentence("mantra"));
+
+2. Write the code that determines if there is a 'x' in mantra.
+var mantra = "Be the dev";
+
+  if (mantra (letter) === "x") {
+    return "XXXX"
+  } else {
+    return "Not X"
+  }
+}
+// console.log(mantra("j"))
 
 // 3. Write the code that determines if there is a 'v' in mantra.
+function mantra(letter){
+  if (mantra === "V")
+  return "There is a V"
+}else{
+  return "No V"
+}
+console.log(mantra("V"))
 
 function letter(str){
  if (str.includes('v')){
@@ -31,6 +41,9 @@ console.log(letter(mantra))
 // Stretch: Write the code that returns the position of 'v' in mantra.
 var mantra = "Be the dev";
 
+
+// Consider the following statement:
+
 function position (str){
     let newArr = str.indexOf("v")
     return newArr 
@@ -39,33 +52,34 @@ console.log(position(mantra))
 
 //Consider the following statement:
 
-var codingIsEasy
-var imBored
+
+var codingIsEasy = true
+var imBored = true
 
 function work (value){
-if (codingIsEasy, imBored) {
+  if (codingIsEasy, imBored) {
     return 'I need more!'
-} else {
+  } else {
     return 'Steady as she goes'
-}    
+  }    
 }
 console.log(work(codingIsEasy, imBored))
+
 // 4. Update the codingIsEasy and imBored variables above the statement to the values required to log "I need more!"
 
 // Consider the following statement:
 
-var imLost
-var imFrustrated
+var imLost = true
+var imFrustrated = false
 
 function stress(){
-if (imLost || imFrustrated) {
-    return 'Break time!'
-} else {
-    return 'Keep coding!'
-    
+  if (imLost || imFrustrated) {
+      return 'Break time!'
+  } else {
+      return 'Keep coding!'
+  }
 }
-}
- console.log (stress(imLost|| imFrustrated))
+console.log (stress(imLost, imFrustrated))
 
 // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
 
@@ -85,7 +99,7 @@ var mantra = "Be the dev"
 
 // Consider the following variable:
 
-var message = "thisisateststring"
+var message = "thisisateststring";
 
 // // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
 function noVowels (str){
@@ -99,7 +113,14 @@ console.log (noVowels(message))
 
 // Consider the following variable:
 
-var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
+var toonimals = [
+  { name: "Itchy", animal: "mouse" },
+  { name: "Stimpy", animal: "cat" },
+  { name: "Daffy", animal: "duck" },
+  { name: "Scratchy", animal: "cat" },
+  { name: "Ren", animal: "dog" },
+  { name: "Felix", animal: "cat" }
+];
 
 // // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
 
@@ -112,7 +133,3 @@ function onlyCat (arr){
     return newArr 
 }
 console.log (onlyCat (toonimals))
-        
-
-
-
