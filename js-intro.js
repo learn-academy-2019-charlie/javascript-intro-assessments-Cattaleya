@@ -1,13 +1,3 @@
-var http = require("http");
-
-//create a server object:
-http
-  .createServer(function(req, res) {
-    res.write("Hello World!"); //write a response to the client
-    res.end(); //end the response
-  })
-  .listen(8080); //the server object listens on port 8080
-// Intro to Javascript Assessments
 
 Consider this variable:
 
@@ -39,35 +29,69 @@ function mantra(letter){
 }
 console.log(mantra("V"))
 
+function letter(str){
+ if (str.includes('v')){
+ return "has v"
+ }else{ 
+ return 'no v'
+ }
+}
+console.log(letter(mantra))
+
 // Stretch: Write the code that returns the position of 'v' in mantra.
+var mantra = "Be the dev";
+
 
 // Consider the following statement:
 
-var codingIsEasy;
-var imBored;
-
-if (codingIsEasy && imBored) {
-  console.log("I need more!");
-} else {
-  console.log("Steady as she goes");
+function position (str){
+    let newArr = str.indexOf("v")
+    return newArr 
 }
+console.log(position(mantra))
+
+//Consider the following statement:
+
+
+var codingIsEasy = true
+var imBored = true
+
+function work (value){
+  if (codingIsEasy, imBored) {
+    return 'I need more!'
+  } else {
+    return 'Steady as she goes'
+  }    
+}
+console.log(work(codingIsEasy, imBored))
 
 // 4. Update the codingIsEasy and imBored variables above the statement to the values required to log "I need more!"
 
 // Consider the following statement:
 
-var imLost;
-var imFrustrated;
+var imLost = true
+var imFrustrated = false
 
-if (imLost || imFrustrated) {
-  console.log("Break time!");
-} else {
-  console.log("Keep coding!");
+function stress(){
+  if (imLost || imFrustrated) {
+      return 'Break time!'
+  } else {
+      return 'Keep coding!'
+  }
 }
+console.log (stress(imLost, imFrustrated))
 
 // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
 
 // 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
+
+var mantra = "Be the dev"
+
+ 
+     var newArr = mantra.split("")
+    for (let i=0; i < newArr.length ; i++){
+        console.log (newArr[i])
+    }
 
 // Stretch: Using a while loop.
 
@@ -77,7 +101,11 @@ if (imLost || imFrustrated) {
 
 var message = "thisisateststring";
 
-// 7. Write a function that takes a string like message as an argument and returns the string without vowels.
+// // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
+function noVowels (str){
+    return str.replace (/[aeiou]/gi,"")
+}
+console.log (noVowels(message))
 
 // Stretch: Update your function to throw an exception if the argument is not a string.
 
@@ -94,4 +122,14 @@ var toonimals = [
   { name: "Felix", animal: "cat" }
 ];
 
-// 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
+// // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
+
+function onlyCat (arr){
+    let  newArr = []
+    for(let i =0 ; i < arr.length; i ++){
+        if (arr[i].animal ==="cat" ) 
+        newArr.push(arr[i])
+    }
+    return newArr 
+}
+console.log (onlyCat (toonimals))
